@@ -10,6 +10,13 @@ void zamijeni(int* a, int* b)
 }
 int* GenerateArray(int len, int arrayType)
 {
+	/*arrayType odredjuje tip niza koji ce se izvrsiti
+	
+	0 - random (average case)
+	1 - uzlazno (best case)
+	2 - silazno (worst case)
+	
+	*/
 	int* arr = new int[len];
 	if (arrayType == 0)
 	{
